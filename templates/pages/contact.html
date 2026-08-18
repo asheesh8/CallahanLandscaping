@@ -1,0 +1,33 @@
+<section class="phead">
+  <div class="wrap">
+    <p class="eyebrow">04 — Get a quote</p>
+    <h1 class="display display-sm">Tell us about<br>the property.</h1>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap wrap-narrow">
+    <p class="lede">Address and a rough idea of what you need is enough to start. We will come
+      look before quoting anything, and the quote is free.</p>
+
+    <form class="form" id="quote-form" method="post" action="/api/quote" novalidate>
+      <div class="row">
+        <label>Name<input name="name" type="text" autocomplete="name" required maxlength="120"></label>
+        <label>Phone or email<input name="contact" type="text" autocomplete="tel" required maxlength="160"></label>
+      </div>
+      <label>Property address<input name="address" type="text" autocomplete="street-address" maxlength="200"></label>
+      <label>What do you need?<textarea name="message" rows="4" maxlength="2000"
+        placeholder="Weekly mowing, beds need edging and mulch, roughly half an acre…"></textarea></label>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn-accent" type="submit">Send it</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="or">Or skip the form — <a href="tel:{{PHONE_T}}">text or call {{PHONE_D}}</a>.
+      Hunter is the owner operator, so you are talking to the person doing the work.</p>
+
+    <address class="addr addr-block">
+      639 Hinesburg Rd, Ste 1<br>South Burlington, VT 05403
+    </address>
+  </div>
+</section>

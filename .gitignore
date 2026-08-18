@@ -1,0 +1,15 @@
+# Quote submissions — contains names, phone numbers, addresses and IPs.
+# Never commit this.
+data/
+
+# 47 MB archive master. Kept locally, re-encode from it if another size is needed
+# (see CLAUDE.md). Excluded so clones and Vercel deploys stay small.
+media/hero-master_2880x1620.mp4
+
+# Local agent tooling, not part of the site
+.agents/
+.claude/
+skills-lock.json
+
+.DS_Store
+*.log
