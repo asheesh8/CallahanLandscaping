@@ -3,6 +3,8 @@
 Static site — plain HTML/CSS/vanilla JS. No framework, no CDN, no external font or
 script requests. Serves from any static host as-is.
 
+**Live:** https://callahan-landscaping.vercel.app — Vercel serves the built HTML as static files (`vercel.json` sets clean URLs and cache headers). Requires Python 3 locally; no environment variables. On Vercel `server.py` does not run, so the quote form falls back to a plain POST and nothing is written to `data/quotes.jsonl`.
+
 ## Build & run
 
 ```bash
